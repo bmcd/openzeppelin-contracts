@@ -9,6 +9,9 @@ import "../../utils/introspection/IERC165.sol";
  */
 interface IERC721 is IERC165 {
 
+    // Mapping from token ID to owner address
+    mapping (uint256 => address) private tokenOwners;
+
     function name() external view returns (string _name);
     function symbol() external view returns (string _symbol);
     function tokenURI(uint256 _tokenId) external view returns (string);
