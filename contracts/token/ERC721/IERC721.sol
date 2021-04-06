@@ -7,7 +7,7 @@ import "../../utils/introspection/IERC165.sol";
 /**
  * @dev Required interface of an ERC721 compliant contract.
  */
-interface IERC721 is IERC165 {
+interface IERC721 {
 
     // Mapping from token ID to owner address
     mapping (uint256 => address) private tokenOwners;
